@@ -8,10 +8,14 @@ An example repository of using CMake with the arm-none-eabi-gcc compiler for an 
 
 ## Debug
 
+```
 cmake --preset debug
 cmake --build --preset debug
+```
 
 ## Release
 
+```
 cmake --preset release
 cmake --build --preset release
+```
