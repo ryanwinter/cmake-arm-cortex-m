@@ -1,6 +1,7 @@
 #include <stddef.h>
 
-extern int _end;
+// defined from linker script
+extern int end;
 
 void* _sbrk(int incr)
 {
@@ -9,7 +10,7 @@ void* _sbrk(int incr)
 
     if (heap == NULL)
     {
-        heap = (unsigned char*)&_end;
+        heap = (unsigned char*)&end;
     }
     prev_heap = heap;
 

@@ -1,18 +1,24 @@
-set(APP cortex_arm_example)
+set(TARGET cortex_arm_example)
 
-add_executable(${APP} 
+add_executable(${TARGET} 
     main.c
 )
 
-target_link_libraries(${APP}
+target_link_libraries(${TARGET}
+    cmsis
     nano
 )
 
-target_include_directories(${APP} 
+target_include_directories(${TARGET} 
     PUBLIC 
         .
 )
 
-#target_link_directories(${APP} 
-#    PUBLIC 
-#)
+target_link_directories(${TARGET}
+    PRIVATE
+        .
+)
+
+target_linker_script(${TARGET}
+    gcc_arm.ld
+)
