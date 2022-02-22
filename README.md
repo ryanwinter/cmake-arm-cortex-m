@@ -6,12 +6,12 @@ An example repository of using CMake with the arm-none-eabi-gcc compiler for an 
 
 # Building
 
-# Debug
+## Debug
 
 cmake --preset debug
 cmake --build --preset debug
 
-# Release
+## Release
 
 cmake --preset release
 cmake --build --preset release
