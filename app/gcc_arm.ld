@@ -32,7 +32,7 @@
     <o1> Flash Size (in Bytes) <0x0-0xFFFFFFFF:8>
   </h>
   -----------------------------------------------------------------------------*/
-__ROM_BASE = 0x00000000;
+__ROM_BASE = 0x08000000;
 __ROM_SIZE = 0x00040000;
 
 /*--------------------- Embedded RAM Configuration ----------------------------
@@ -127,7 +127,7 @@ SECTIONS
   /*
    * SG veneers:
    * All SG veneers are placed in the special output section .gnu.sgstubs. Its start address
-   * must be set, either with the command line option ‘--section-start’ or in a linker script,
+   * must be set, either with the command line option ï¿½--section-startï¿½ or in a linker script,
    * to indicate where to place these veneers in memory.
    */
 /*
