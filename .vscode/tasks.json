@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": ".vscode/scripts/flash_stm32l4discovery.sh",
+            "windows": {
+                "command": ".vscode/scripts/flash_stm32l4discovery.cmd"
+            },
+            "problemMatcher": [],
+            "dependsOn": [ "Build" ]
+        },
+        {
+            "label": "Build",
+            "type": "cmake",
+            "command": "build",
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

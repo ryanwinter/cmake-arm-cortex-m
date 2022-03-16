@@ -2,13 +2,9 @@
     "version": 3,
     "configurePresets": [
         {
-            "name": "default",
-            "generator": "Ninja",
-            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gcc/arm-cortex-m4-gcc.cmake"
-        },
-        {
             "name": "debug",
-            "inherits": "default",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gcc/arm-cortex-m4-gcc.cmake",
             "binaryDir": "${sourceDir}/build/debug",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug"
@@ -16,7 +12,8 @@
         },
         {
             "name": "release",
-            "inherits": "default",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gcc/arm-cortex-m4-gcc.cmake",
             "binaryDir": "${sourceDir}/build/release",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"

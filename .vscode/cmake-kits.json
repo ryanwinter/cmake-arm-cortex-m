@@ -1,0 +1,10 @@
+[
+    {
+        "name": "ARM Cortex M4 GCC",
+        "toolchainFile": "${workspaceFolder}/cmake/arm-cortex-m4-gcc.cmake"
+    },
+    {
+        "name": "ARM Cortex M7 GCC",
+        "toolchainFile": "${workspaceFolder}/cmake/arm-cortex-m7-gcc.cmake"
+    }    
+]
