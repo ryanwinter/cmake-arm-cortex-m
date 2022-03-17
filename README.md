@@ -7,6 +7,9 @@ An example repository of using CMake with the arm-none-eabi-gcc compiler for an 
 # Cloning
 
 This repository includes submodules. When cloning, use the ```--recursive``` flag.
+``` 
+git clone --recursive https://github.com/ryanwinter/cmake-arm-cortex-m
+```
 
 # Building
 
