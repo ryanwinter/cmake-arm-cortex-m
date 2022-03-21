@@ -19,6 +19,6 @@ target_link_directories(${TARGET}
         .
 )
 
-target_linker_script(${TARGET}
+target_link(${TARGET}
     ${CMAKE_CURRENT_LIST_DIR}/${CMAKE_C_COMPILER_ID}_arm
 )

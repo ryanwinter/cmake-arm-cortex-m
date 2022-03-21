@@ -1,4 +1,12 @@
-int _read(int file, char* ptr, int len)
+#include <stddef.h>
+
+#ifdef __ICCARM__
+size_t __read(int file, unsigned char *ptr, size_t len)
+#elif __GNUC__
+int _read(int file, char *ptr, int len)
+#else
+#error unknown compiler
+#endif
 {
     int DataIdx;
     for (DataIdx = 0; DataIdx < len; DataIdx++)
@@ -9,7 +17,13 @@ int _read(int file, char* ptr, int len)
     return len;
 }
 
-int _write(int file, char* ptr, int len)
+#ifdef __ICCARM__
+size_t __write(int file, const unsigned char *ptr, size_t len)
+#elif __GNUC__
+int _write(int file, char *ptr, int len)
+#else
+#error unknown compiler
+#endif
 {
     int DataIdx;
     for (DataIdx = 0; DataIdx < len; DataIdx++)

@@ -8,12 +8,12 @@ An example repository of using CMake with the arm-none-eabi-gcc compiler for an 
 
 ## Install the tools
 
-1. Install the required tools, make sure they are in the system path
-    1. [Git](https://git-scm.com/downloads)
-    1. [CMake](https://cmake.org/download/)
-    1. [Ninja](https://github.com/ninja-build/ninja/releases)
-    1. [Arm GNU Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
-    1. [OpenOCD](https://github.com/openocd-org/openocd/releases)
+Install the required tools, make sure they are in the system path
+1. [Git](https://git-scm.com/downloads)
+1. [CMake](https://cmake.org/download/)
+1. [Ninja](https://github.com/ninja-build/ninja/releases)
+1. [Arm GNU Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+1. [OpenOCD](https://github.com/openocd-org/openocd/releases)
 
 ## Cloning
 
