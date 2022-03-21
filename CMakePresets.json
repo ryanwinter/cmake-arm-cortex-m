@@ -4,8 +4,8 @@
         {
             "name": "debug",
             "generator": "Ninja",
-            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gcc/arm-cortex-m4-gcc.cmake",
-            "binaryDir": "${sourceDir}/build/debug",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gnu/arm-cortex-m4-gnu.cmake",
+            "binaryDir": "${sourceDir}/build/gnu/debug",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug"
             }
@@ -13,12 +13,30 @@
         {
             "name": "release",
             "generator": "Ninja",
-            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gcc/arm-cortex-m4-gcc.cmake",
-            "binaryDir": "${sourceDir}/build/release",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-gnu/arm-cortex-m4-gnu.cmake",
+            "binaryDir": "${sourceDir}/build/gnu/release",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
-        }
+        },
+        {
+            "name": "debug-iar",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-iar/arm-cortex-m4-iar.cmake",
+            "binaryDir": "${sourceDir}/build/iar/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "release-iar",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-iar/arm-cortex-m4-iar.cmake",
+            "binaryDir": "${sourceDir}/build/iar/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }        
     ],
     "buildPresets": [
         {
@@ -28,6 +46,14 @@
         {
             "name": "release",
             "configurePreset": "release"
+        },
+        {
+            "name": "debug-iar",
+            "configurePreset": "debug-iar"
+        },
+        {
+            "name": "release-iar",
+            "configurePreset": "release-iar"
         }
     ]
 }

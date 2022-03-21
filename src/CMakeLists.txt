@@ -6,7 +6,7 @@ add_executable(${TARGET}
 
 target_link_libraries(${TARGET}
     cmsis
-    nano
+    specs
 )
 
 target_include_directories(${TARGET} 
@@ -20,5 +20,5 @@ target_link_directories(${TARGET}
 )
 
 target_linker_script(${TARGET}
-    gcc_arm.ld
+    ${CMAKE_CURRENT_LIST_DIR}/${CMAKE_C_COMPILER_ID}_arm
 )

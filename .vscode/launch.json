@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/build/debug/app/cortex_arm_example.elf",
+            "program": "${workspaceFolder}/build/debug/gnu/app/cortex_arm_example.elf",
             "MIMode": "gdb",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "miDebuggerServerAddress": "localhost:3333",

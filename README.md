@@ -46,6 +46,8 @@ The repository includes the necessary assets to build, flash and debug the appli
 1. Open the project folder in VSCode
 1. Press `F5` to build, flash and run the project
 
+## GitHub Build Workflow
+
 ## Third party
 
 This repository includes source from the following 3rd parties.
