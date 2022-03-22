@@ -2,6 +2,6 @@
     "recommendations": [
         "ms-vscode.cpptools", 
         "ms-vscode.cmake-tools",
-		"ms-vscode.vscode-embedded-tools"        
+		"marus25.cortex-debug"        
     ]
 }

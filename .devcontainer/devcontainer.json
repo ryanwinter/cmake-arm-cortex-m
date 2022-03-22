@@ -6,7 +6,7 @@
     "extensions": [
 		"ms-vscode.cpptools",
 		"ms-vscode.cmake-tools",
-		"ms-vscode.vscode-embedded-tools"
+		"marus25.cortex-debug"
 	],
 	"remoteUser": "vscode",
 	"postCreateCommand": "git submodule update --recursive --init"
