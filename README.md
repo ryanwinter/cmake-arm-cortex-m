@@ -24,18 +24,32 @@ git clone --recursive https://github.com/ryanwinter/cmake-arm-cortex-m
 
 ## Building with CMake
 
-### Debug
+### Debug GCC
 
 ```
 cmake --preset debug
 cmake --build --preset debug
 ```
 
-### Release
+### Release GCC
 
 ```
 cmake --preset release
 cmake --build --preset release
+```
+
+### Debug IAR
+
+```
+cmake --preset debug-iar
+cmake --build --preset debug-iar
+```
+
+### Release IAR
+
+```
+cmake --preset release-iar
+cmake --build --preset release-iar
 ```
 
 ## Debugging with VSCode
