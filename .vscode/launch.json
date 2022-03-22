@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
+            "name": "Launch GNU",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/build/debug/gnu/app/cortex_arm_example.elf",
+            "program": "${workspaceFolder}/build/gnu/debug/src/cortex_arm_example.elf",
             "MIMode": "gdb",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "miDebuggerServerAddress": "localhost:3333",
@@ -20,6 +20,26 @@
                 "limit": 6
             },
             "preLaunchTask": "Flash"
-        }
+        },
+        {
+            "name": "Launch IAR",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/build/iar/debug/src/cortex_arm_example.elf",
+            "MIMode": "gdb",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "miDebuggerServerAddress": "localhost:3333",
+            "debugServerPath": "openocd",
+            "debugServerArgs": "-f board/stm32l4discovery.cfg",
+            "serverStarted": "Listening on port .* for gdb connections",
+            "filterStderr": true,
+            "stopAtConnect": true,
+            "hardwareBreakpoints": {
+                "require": true,
+                "limit": 6
+            },
+            "preLaunchTask": "Flash-iar"
+        }        
     ]
 }
