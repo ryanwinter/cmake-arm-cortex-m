@@ -26,7 +26,19 @@
             "configFiles": [
                 "board/stm32l4discovery.cfg"
             ]
-        }   
-
+        },
+        {
+            "name": "Launch Keil",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "device": "STM32L4S5VI",
+            "runToMain": true,
+            "executable": "${workspaceFolder}/build/keil/debug/src/cortex_arm_example.elf",
+            "cwd": "${workspaceRoot}",
+            "configFiles": [
+                "board/stm32l4discovery.cfg"
+            ]
+        }
     ]
 }

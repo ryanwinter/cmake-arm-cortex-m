@@ -20,5 +20,5 @@ target_link_directories(${TARGET}
 )
 
 target_link(${TARGET}
-    ${CMAKE_CURRENT_LIST_DIR}/${CMAKE_C_COMPILER_ID}_arm
+    ${CMAKE_CURRENT_LIST_DIR}/link_${CMAKE_C_COMPILER_ID}
 )

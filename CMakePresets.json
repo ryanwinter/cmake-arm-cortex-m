@@ -36,7 +36,25 @@
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
-        }        
+        },
+        {
+            "name": "debug-keil",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-keil/arm-cortex-m4-keil.cmake",
+            "binaryDir": "${sourceDir}/build/keil/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "release-keil",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/arm-cortex-keil/arm-cortex-m4-keil.cmake",
+            "binaryDir": "${sourceDir}/build/keil/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }          
     ],
     "buildPresets": [
         {
@@ -54,6 +72,14 @@
         {
             "name": "release-iar",
             "configurePreset": "release-iar"
-        }
+        },
+        {
+            "name": "debug-keil",
+            "configurePreset": "debug-keil"
+        },
+        {
+            "name": "release-keil",
+            "configurePreset": "release-keil"
+        }        
     ]
 }
