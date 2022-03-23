@@ -11,7 +11,7 @@
 ;   <o1> Flash Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
  *----------------------------------------------------------------------------*/
-#define __ROM_BASE      0x00000000
+#define __ROM_BASE      0x08000000
 #define __ROM_SIZE      0x00080000
 
 /*--------------------- Embedded RAM Configuration ---------------------------

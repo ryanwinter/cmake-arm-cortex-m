@@ -7,7 +7,7 @@
             "request": "launch",
             "servertype": "openocd",
             "device": "STM32L4S5VI",
-            "runToMain": true,
+            "runToEntry": true,
             "executable": "${workspaceFolder}/build/gnu/debug/src/cortex_arm_example.elf",
             "cwd": "${workspaceRoot}",
             "configFiles": [
@@ -20,7 +20,7 @@
             "request": "launch",
             "servertype": "openocd",
             "device": "STM32L4S5VI",
-            "runToMain": true,
+            "runToEntry": true,
             "executable": "${workspaceFolder}/build/iar/debug/src/cortex_arm_example.elf",
             "cwd": "${workspaceRoot}",
             "configFiles": [
@@ -33,7 +33,7 @@
             "request": "launch",
             "servertype": "openocd",
             "device": "STM32L4S5VI",
-            "runToMain": true,
+            "runToEntry": true,
             "executable": "${workspaceFolder}/build/keil/debug/src/cortex_arm_example.elf",
             "cwd": "${workspaceRoot}",
             "configFiles": [
